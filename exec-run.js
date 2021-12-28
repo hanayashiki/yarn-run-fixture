@@ -1,3 +1,4 @@
+const wtf = require("wtfnode");
 const subprocess = require('child_process')
 
 const p = subprocess.exec('yarn serve');
@@ -7,3 +8,7 @@ setTimeout(() => {
   console.log('killing process')
   p.kill()
 }, 5000);
+
+setInterval(() => {
+  wtf.dump();
+}, 1000)
