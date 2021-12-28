@@ -1,9 +1,9 @@
 const subprocess = require('child_process')
 
-const process = subprocess.exec('yarn serve');
-process.stdout.pipe(process.stdout)
+const p = subprocess.exec('yarn serve');
+p.stdout.pipe(process.stdout)
 
 setTimeout(() => {
   console.log('killing process')
-  process.kill()
-}, 3000);
+  p.kill()
+}, 5000);
