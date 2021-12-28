@@ -1,0 +1,10 @@
+{
+  "name": "yarn-run-fixture",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "hanayashiki",
+  "license": "MIT",
+  "scripts": {
+    "serve": "node server.js"
+  }
+}
